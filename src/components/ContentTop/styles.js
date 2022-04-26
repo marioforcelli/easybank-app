@@ -5,9 +5,8 @@ import background from '../../assets/bg-intro-desktop.svg'
 export const Container = styled.section`
     display: flex;
     justify-content: space-around;
-    position: absolute;
-    top: 0;
     width: 100%;
+    height: auto;
 
 `
 

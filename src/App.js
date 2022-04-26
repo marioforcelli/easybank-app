@@ -2,6 +2,7 @@ import { AppWrapper } from "./App.style";
 import ContentTop from "./components/ContentTop";
 import Header from "./components/Header";
 import { GlobalStyle } from "./styles/global";
+import MainSection from "./components/MainSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyle/> 
       <Header/>
       <ContentTop/>
+      <MainSection/>
     </AppWrapper>
 
 
