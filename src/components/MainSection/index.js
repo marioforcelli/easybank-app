@@ -31,18 +31,24 @@ export default function MainSection (){
 
     return (
         <C.Container>
-            <C.SectionTop>
-                <C.ReasonTitle><h2>Why choose EasyBank?</h2></C.ReasonTitle>
-                <C.ReasonDescription><span>  We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</span></C.ReasonDescription>
-            </C.SectionTop>
-            <C.SectionBottom>
-                {reasons.map((i, index) =>{
-                    return(
-                        <MainSectionItems svg={i.button} title={i.title} description={i.desc}/>
-                    )
-                })}
+            <C.Wrapper>
+                <C.Content>
+                    <C.SectionTop>
+                    <C.ReasonTitle><h2>Why choose EasyBank?</h2></C.ReasonTitle>
+                    <C.ReasonDescription><span>  We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</span></C.ReasonDescription>
+                </C.SectionTop>
+                <C.SectionBottom>
+                    {reasons.map((i, index) =>{
+                        return(
+                            <MainSectionItems svg={i.button} title={i.title} description={i.desc}/>
+                        )
+                    })}
 
-            </C.SectionBottom>
+                </C.SectionBottom>
+
+                </C.Content>
+            </C.Wrapper>
+
 
         </C.Container>
     )

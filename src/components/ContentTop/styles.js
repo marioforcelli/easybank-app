@@ -3,11 +3,25 @@ import { Colors as c } from '../../styles/constants'
 import background from '../../assets/bg-intro-desktop.svg'
 
 export const Container = styled.section`
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
 
+    width: 100%;
+    background: url(${background}) left 650px top -450px no-repeat;
+    background-size: cover ;
+    /* background-size: cover 120%;
+    background-position: -50px -150px;
+    background-repeat: no-repeat; */
+
+`
+
+export const Wrapper = styled.div`
+    margin: auto;
+    max-width: calc(1300px + 1.5em);
+    display: block;
+`
+
+export const Content = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 
 export const SectionLeft = styled.div`
@@ -15,9 +29,10 @@ export const SectionLeft = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+  
 
 `
+
 
 export const SectionTitle = styled.h1`
     width: 500px;
@@ -37,12 +52,6 @@ export const SectionDescription = styled.span`
 export const SectionRight = styled.div`
     display: flex;
     flex: 1;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url(${background});
-    background-size: cover 120%;
-    background-position: -50px -150px;
-    background-repeat: no-repeat;
 
 
 `

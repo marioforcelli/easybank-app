@@ -10,6 +10,7 @@ export const Container = styled.div`
 `
 
 export const BtnArea = styled.div`
+    padding: 30px;
 
 `
 

@@ -4,8 +4,8 @@ import { Colors as c } from './constants'
 
 export const GlobalStyle = createGlobalStyle`
     *{
-        margin: 0%;
         padding: 0;
+        margin: 0;
         box-sizing: border-box;
 
     }
@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     html, body, #root {
         height: 100%;
         width: 100%;
-        margin: auto;
+
     }
 
 

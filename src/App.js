@@ -3,6 +3,7 @@ import ContentTop from "./components/ContentTop";
 import Header from "./components/Header";
 import { GlobalStyle } from "./styles/global";
 import MainSection from "./components/MainSection";
+import Articles from "./components/Articles";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <ContentTop/>
       <MainSection/>
+      <Articles/>
     </AppWrapper>
 
 
