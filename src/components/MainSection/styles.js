@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { Colors as c } from '../../styles/constants'
 
 export const Container = styled.section`
-    margin-bottom: 40px;
+    background-color: ${c.secondary.veryLightGray};
+    padding: 80px 0;
 
 `
 
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-    background-color: ${c.secondary.veryLightGray};
+    
     flex-direction: column;
     display: flex;
 `

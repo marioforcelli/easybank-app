@@ -3,7 +3,7 @@ import {Colors as c} from '../../styles/constants'
 
 export const Container = styled.section`
     display: block;
-    padding: 50px 0;
+    padding: 80px 0;
 `
 
 export const Wrapper = styled.div`

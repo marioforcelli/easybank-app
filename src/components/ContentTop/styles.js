@@ -3,9 +3,9 @@ import { Colors as c } from '../../styles/constants'
 import background from '../../assets/bg-intro-desktop.svg'
 
 export const Container = styled.section`
-
+    height: 700px;
     width: 100%;
-    background: url(${background}) left 650px top -450px no-repeat;
+    background: url(${background}) left 700px top -250px no-repeat;
     background-size: cover ;
     /* background-size: cover 120%;
     background-position: -50px -150px;
@@ -52,6 +52,11 @@ export const SectionDescription = styled.span`
 export const SectionRight = styled.div`
     display: flex;
     flex: 1;
+
+    & img{
+    
+        margin-left: 300px;
+    }
 
 
 `

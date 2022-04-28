@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { GlobalStyle } from "./styles/global";
 import MainSection from "./components/MainSection";
 import Articles from "./components/Articles";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ContentTop/>
       <MainSection/>
       <Articles/>
+      <Footer/>
     </AppWrapper>
 
 
