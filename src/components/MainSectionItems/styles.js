@@ -7,6 +7,20 @@ export const Container = styled.div`
     flex-direction: column;
     width: 15rem;
 
+    @media(max-width:1200px) {
+        width: 6rem;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    @media(max-width: 550px){
+        width: 100%;
+        text-align: center;
+        padding: 35px;
+    }
+
+
 `
 
 export const BtnArea = styled.div`
@@ -22,6 +36,10 @@ export const TitleArea = styled.div`
         color: ${c.primary.darkBlue};
         font-weight: 300;
         margin-bottom: 30px;
+
+        @media(max-width: 1000px) {
+            font-size: 18px;
+        }
     }
 
 `
@@ -30,6 +48,14 @@ export const Description = styled.div`
 
     & span {
         color : ${c.secondary.grayishBlue};
+    }
+
+    @media(max-width:1200px) {
+
+        & span{
+            font-size: 14px;
+        }
+        
     }
     
 `

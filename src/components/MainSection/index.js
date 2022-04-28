@@ -34,8 +34,8 @@ export default function MainSection (){
             <C.Wrapper>
                 <C.Content>
                     <C.SectionTop>
-                    <C.ReasonTitle><h2>Why choose EasyBank?</h2></C.ReasonTitle>
-                    <C.ReasonDescription><span>  We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</span></C.ReasonDescription>
+                    <C.ReasonTitle>Why choose EasyBank?</C.ReasonTitle>
+                    <C.ReasonDescription>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</C.ReasonDescription>
                 </C.SectionTop>
                 <C.SectionBottom>
                     {reasons.map((i, index) =>{

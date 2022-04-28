@@ -15,38 +15,67 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-    
+
     flex-direction: column;
     display: flex;
 `
 
 export const SectionTop = styled.div`
     display: flex;
-    height: 30%;
-    width: 50%;
+    padding: 10px;
     flex-direction: column;
-    margin-bottom: 50px;
+    
 
+    @media (max-width: 640px) {
+        align-items: center;
+        text-align: center;
+       
 
-`
-
-export const ReasonTitle = styled.div`
-    & h2{
-        font-size: 28px;
-        color: ${c.primary.darkBlue};
-        font-weight: 300;
+        
     }
+
+
 `
 
-export const ReasonDescription = styled.div`
+export const ReasonTitle = styled.h2`
+   
+    font-size: 28px;
+    color: ${c.primary.darkBlue};
+    font-weight: 300;
+
+    @media (max-width: 640px) {
+        font-size: 24px;
+        
+
+    
+    }
+
+
+
+`
+
+export const ReasonDescription = styled.span`
     margin-top: 20px;
     width: 600px;
     color: ${c.secondary.grayishBlue};
+    @media (max-width: 640px) {
+        font-size: 14px;
+        width: 100%;
+
+    
+    }
+
 `
 
 export const SectionBottom = styled.div`
     height: 50%;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 550px) {
+
+        flex-direction: column;
+        align-items: center;
+    }
     
 `
