@@ -10,7 +10,7 @@ export const Container = styled.header`
     width: 100%;
     height: 80px;
     @media(max-width:860px) {
-        padding: 0 25px;
+      padding: 0 25px;
         
     }
 

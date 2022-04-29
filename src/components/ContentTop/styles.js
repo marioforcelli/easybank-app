@@ -56,7 +56,6 @@ export const Content = styled.div`
 `
 
 export const SectionLeft = styled.div`
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +65,7 @@ export const SectionLeft = styled.div`
 
 
 export const SectionTitle = styled.h1`
-    width: 500px;
+    width: 100%;
     margin-bottom: 30px;
     font-size: 50px;
     color: ${c.primary.darkBlue};
@@ -80,7 +79,7 @@ export const SectionTitle = styled.h1`
 
 export const SectionDescription = styled.span`
     color: ${c.secondary.grayishBlue};
-    width: 500px;
+    
     font-size: 18px;
 
     @media (max-width: 860px) {
@@ -124,7 +123,7 @@ export const SectionRight = styled.div`
 `
 export const ButtonContainer = styled.div`
     display: flex;
-    width: 500px;
+
     margin-top: 30px;
 
     @media (max-width: 860px) {
