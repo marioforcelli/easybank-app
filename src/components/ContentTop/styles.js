@@ -46,6 +46,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     display: flex;
     justify-content: space-between;
+    height: 100%;
 
     @media(max-width: 860px) {
         flex-direction: column-reverse;
@@ -56,16 +57,17 @@ export const Content = styled.div`
 `
 
 export const SectionLeft = styled.div`
-    display: flex;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   
 
 `
 
 
 export const SectionTitle = styled.h1`
-    width: 100%;
+    width: 500px;
     margin-bottom: 30px;
     font-size: 50px;
     color: ${c.primary.darkBlue};
@@ -79,7 +81,7 @@ export const SectionTitle = styled.h1`
 
 export const SectionDescription = styled.span`
     color: ${c.secondary.grayishBlue};
-    
+    width: 500px;
     font-size: 18px;
 
     @media (max-width: 860px) {
@@ -106,15 +108,20 @@ export const SectionRight = styled.div`
 
         @media(max-width: 1360px) {
         margin-left: 0px;
-        width: 100%;
+        width: 600px;
         
         }
 
-        @media(max-width: 860px) {
+        @media(max-width: 960px) {
             margin-left: 0px;
-            width: 100%;
-            display: none ;
+            width: 400px;
+            
         }
+        @media(max-width: 860px) {
+            display: none;
+            
+        }
+
 
 
     }
@@ -123,7 +130,7 @@ export const SectionRight = styled.div`
 `
 export const ButtonContainer = styled.div`
     display: flex;
-
+    width: 500px;
     margin-top: 30px;
 
     @media (max-width: 860px) {
