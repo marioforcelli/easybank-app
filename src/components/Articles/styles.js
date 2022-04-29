@@ -23,9 +23,18 @@ export const Title = styled.h1`
     font-size: 28px;
     font-weight: 300;
     color: ${c.primary.darkBlue};
+    @media(max-width: 860px) {
+        text-align: center;
+    } 
 `
 
 export const ArticleArea = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 860px) {
+        flex-direction: column;
+    } 
+        
+    
 `

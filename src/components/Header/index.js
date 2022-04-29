@@ -1,8 +1,21 @@
 import { Button } from "./styles";
 import * as C from './styles'
 import logo from '../../assets/logo.svg' 
+import { useState } from "react";
+import ModalMenu from "../ModalMenu";
 
 export default function Header(){
+
+    const [showModal, setShowModal] = useState(false)
+
+    const handleMenuClick = () =>{
+        if(!showModal){
+            setShowModal(true)
+        }else{
+            setShowModal(false)
+        }
+
+    }
 
     return (
         <C.Container>
@@ -19,7 +32,13 @@ export default function Header(){
                         <C.NavItem>Careers</C.NavItem>
                     </C.Nav>
                     <C.InviteButton>Request Invite</C.InviteButton>
-
+                    
+                    {!showModal &&  <C.HamburgerMenu onClick={handleMenuClick}/> || showModal && (
+                        <>
+                            <C.CloseIcon onClick={handleMenuClick}/> <ModalMenu/>
+                        </>
+                    ) }
+                    
                 </C.Content>
 
 
