@@ -12,9 +12,20 @@ export const Container = styled.footer`
     background-color: ${c.primary.darkBlue};
     padding: 40px 0px;
     color: white;
+    & li{
+        margin-top: 15px;
+    }
+
+    @media(max-width: 860px) {
+        height: 500px;
+
+    }
 `
 
 export const FooterLogo = styled(Logo)`
+
+
+
 
     
 `
@@ -30,6 +41,11 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     display: flex;
     height: 100%;
+
+    @media(max-width: 860px) {
+        flex-direction: column;
+
+    }
 `
 
 export const FooterLeft = styled.div`
@@ -37,6 +53,14 @@ export const FooterLeft = styled.div`
     justify-content: space-around;
     display: flex;
     flex: 1;
+    @media(max-width: 860px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
     
 
 `
@@ -46,6 +70,12 @@ export const LogoSocials = styled.div`
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+    
+    @media(max-width: 860px) {
+        margin-bottom: 10px;
+        width: 100%;
+        align-items: center;
+    }
 
 `
 
@@ -55,15 +85,34 @@ export const FooterRight = styled.div`
     align-items: flex-end;
     justify-content: space-around;
     flex: 1;
+    @media(max-width: 860px) {
+        margin: 35px 0;
+        width: 100%;
+        align-items: center;
+   
+    }
+
 `
 
 
 export const Socials = styled.div`
+    @media(max-width: 860px) {
+        margin-top: 40px;
+        width: 100%;
+        margin: 25px 0px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    & svg{
-        margin-right: 15px;
-
+        & svg{
+            position: relative;
+            left: 2%;
+            height: auto;
+            width: 45px;
+        }
     }
+
+
 
     
 `
@@ -73,6 +122,12 @@ export const NavLeft = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media(max-width: 860px) {
+        width: 100%;
+        align-items: center;
+
+    }
+
 `
 
 export const NavRight = styled.ul`
@@ -80,6 +135,11 @@ export const NavRight = styled.ul`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media(max-width: 860px) {
+        width: 100%;
+        align-items: center;
+
+    }
 `
 
 export const FbIcon = styled(Facebook)`
@@ -113,5 +173,10 @@ export const InviteButton = styled.button`
 export const RightsReserved = styled.span`
     font-size: 8px;
     color: ${c.secondary.grayishBlue};
+    @media(max-width: 860px) {
+        margin-top: 25px;
+       font-size: 14px;
+
+    }
 
 `

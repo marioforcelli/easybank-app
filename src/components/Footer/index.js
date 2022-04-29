@@ -17,14 +17,14 @@ export default function Footer(){
                         </C.Socials>
                         </C.LogoSocials>
                         <C.NavLeft>
-                            <ul>About Us</ul>
-                            <ul>Contact</ul>
-                            <ul>Blog</ul>
+                            <li>About Us</li>
+                            <li>Contact</li>
+                            <li>Blog</li>
                         </C.NavLeft>
                         <C.NavRight>
-                            <ul>Careers</ul>
-                            <ul>Support</ul>
-                            <ul>Privacy Policy</ul>
+                            <li>Careers</li>
+                            <li>Support</li>
+                            <li>Privacy Policy</li>
                         </C.NavRight>
                     </C.FooterLeft>
                     <C.FooterRight>

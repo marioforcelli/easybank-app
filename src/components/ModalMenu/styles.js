@@ -4,7 +4,7 @@ import { Colors as c } from "../../styles/constants";
 export const Container = styled.div`
     display: flex;
     height: 200px;
-    width: calc(100vw - 70px);
+    width: calc(100vw - 100px);
     position: absolute;
     top: 100%;
     background-color: white;
